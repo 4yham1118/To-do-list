@@ -1,0 +1,113 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container button {
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline;
+  padding: 5px 16px;
+}
+
+.container img {
+  height: 18px;
+  width: 18px;
+}
+
+#buttonReset {
+  background-color: red;
+}
+
+.container input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+}
+
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center; /* Align the label text and checkbox */
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  position: relative;
+  user-select: none; /* Prevent text selection when clicking */
+}
+
+.custom-checkbox input {
+  display: none; /* Hide the default checkbox */
+}
+
+/* Custom checkbox box */
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #f0f0f0; /* Light gray background */
+  border: 2px solid #ccc; /* Border */
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 8px; /* Space between checkbox and text */
+  position: relative;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Checkmark (tick) when checked */
+.custom-checkbox .checkmark::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.2s;
+}
+
+/* Change background and border when checked */
+.custom-checkbox input:checked + .checkmark {
+  background-color: #007bff; /* Blue background */
+  border-color: #007bff; /* Blue border */
+}
+
+/* Show checkmark when checked */
+.custom-checkbox input:checked + .checkmark::after {
+  opacity: 1;
+}
+
+/* Hover effect */
+.custom-checkbox .checkmark:hover {
+  border-color: #007bff; /* Highlight border on hover */
+}
+
+
+.tasks button {
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+}
